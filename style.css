@@ -1,0 +1,76 @@
+/* PREMIUM NAVBAR */
+.custom-navbar {
+  background: linear-gradient(135deg, #4B0082, #8A2BE2);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  /* Glass effect 🔥 */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* Logo */
+.custom-navbar .navbar-brand {
+  color: #fff !important;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Menu links */
+.custom-navbar .nav-link {
+  color: #eee !important;
+  margin-left: 20px;
+  font-size: 16px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover glow effect ✨ */
+.custom-navbar .nav-link:hover {
+  color: #fff !important;
+  text-shadow: 0 0 8px #d8b4ff;
+}
+
+/* Underline animation */
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #d8b4ff;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active link (current page 🔥) */
+.custom-navbar .nav-link.active {
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.custom-navbar .nav-link.active::after {
+  width: 100%;
+}
+
+/* Mobile button */
+.navbar-toggler {
+  background: #fff;
+  border: none;
+  padding: 5px 10px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .custom-navbar .nav-link {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
