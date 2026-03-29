@@ -1,0 +1,128 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.custom-navbar {
+    background: linear-gradient(90deg, #6a0dad, #a020f0);
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #f3e8ff, #ffffff);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.btn-custom {
+    background: #6a0dad;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+/* Cards */
+.card {
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.gallery img {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+/* Slider Base */
+.slide {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Background Images */
+.slide1 {
+    background: url('../images/slide1.jpg') no-repeat center/cover;
+}
+
+.slide2 {
+    background: url('../images/slide2.jpg') no-repeat center/cover;
+}
+
+.slide3 {
+    background: url('../images/slide3.jpg') no-repeat center/cover;
+}
+
+/* Overlay */
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(106, 13, 173, 0.6); /* violet overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Text */
+.overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+/* Button */
+.btn-custom {
+    background: white;
+    color: #6a0dad;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-top: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .slide {
+        height: 60vh;
+    }
+
+    .overlay h1 {
+        font-size: 1.8rem;
+    }
+
+    .overlay p {
+        font-size: 1rem;
+    }
+
+    .btn-custom {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}

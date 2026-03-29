@@ -1,7 +1,14 @@
 <?php include 'header.php'; ?>
 
 <!-- SLIDER -->
-<div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+<div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+  </div>
 
   <div class="carousel-inner">
 
@@ -11,7 +18,7 @@
         <div class="overlay">
           <h1>Enhance Your Beauty</h1>
           <p>Professional Beauty Services</p>
-          <a href="contact.php" class="btn btn-light">Book Now</a>
+          <a href="contact.php" class="btn btn-custom">Book Now</a>
         </div>
       </div>
     </div>
@@ -22,7 +29,7 @@
         <div class="overlay">
           <h1>Bridal Makeup</h1>
           <p>Make Your Special Day Perfect</p>
-          <a href="contact.php" class="btn btn-light">Book Now</a>
+          <a href="contact.php" class="btn btn-custom">Book Now</a>
         </div>
       </div>
     </div>
@@ -33,12 +40,21 @@
         <div class="overlay">
           <h1>Hair & Skin Care</h1>
           <p>Glow with Confidence</p>
-          <a href="contact.php" class="btn btn-light">Book Now</a>
+          <a href="contact.php" class="btn btn-custom">Book Now</a>
         </div>
       </div>
     </div>
 
   </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 
 </div>
 
