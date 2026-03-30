@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'includes/header.php'; ?>
 
 <!-- SLIDER -->
 <div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -58,4 +58,4 @@
 
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

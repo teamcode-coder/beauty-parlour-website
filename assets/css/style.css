@@ -126,3 +126,8 @@ body {
         font-size: 14px;
     }
 }
+.admin-card {
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
