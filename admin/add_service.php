@@ -1,3 +1,11 @@
+<?php 
+session_start();
+
+if(!isset($_SESSION['admin'])){
+    header("Location: login.php");
+    exit();
+}
+?>
 <?php include '../includes/header.php'; ?>
 <?php include '../config/db.php'; ?>
 
